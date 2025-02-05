@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "lpu-login",
-  "title": "LPU LOGIN",
-  "description": "Login to LPU Wifi",
+  "name": "lpu-wifi",
+  "title": "LPU Wifi",
+  "description": "Manage your LPU Wifi authentication",
   "icon": "extension-icon.png",
   "author": "Amogh",
   "license": "MIT",
@@ -11,6 +11,12 @@
       "name": "login-to-lpu-wifi",
       "title": "Login to LPU WIFI",
       "description": "Login to LPU Wifi",
+      "mode": "no-view"
+    },
+    {
+      "name": "logout-from-lpu-wifi",
+      "title": "Logout from LPU WIFI",
+      "description": "Logout from LPU Wifi",
       "mode": "no-view"
     }
   ],
