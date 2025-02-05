@@ -1,5 +1,6 @@
 import { getPreferenceValues, showToast, Toast } from "@raycast/api";
 import axios from "axios";
+import https from "https";
 
 export default async function loginToLpuWifi() {
   const { username, password } = getPreferenceValues();
@@ -16,7 +17,7 @@ export default async function loginToLpuWifi() {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
-      httpsAgent: new (require("https").Agent)({ rejectUnauthorized: false }),
+      httpsAgent: new https.Agent({ rejectUnauthorized: false }),
     });
 
     if (response.data.includes("To start surfing")) {
