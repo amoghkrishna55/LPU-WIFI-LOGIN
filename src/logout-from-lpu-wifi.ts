@@ -3,7 +3,7 @@ import axios from "axios";
 import https from "https";
 
 export default async function logoutFromLpuWifi() {
-  const { username, password } = getPreferenceValues();
+  const { username } = getPreferenceValues();
 
   await showToast({
     style: Toast.Style.Animated,
